@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {myProjects } from '../constant'
+import { myProgress } from '../constant'
 import ToggleText from './ToggleText'
 
-const projectCount = myProjects.length
+const projectCount = myProgress.length
 
 const Progress = () => {
    
@@ -10,7 +10,7 @@ const Progress = () => {
 
 
 
-    const currentProject = myProjects[selectProjectIndex]
+    const currentProject = myProgress[selectProjectIndex]
 
 
     const handleNavigation = (direction) => {
@@ -25,7 +25,7 @@ const Progress = () => {
 
   return (
     <section className='sm:px-10 px-5 my-20' id='work'>
-        <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent'>My Work</p>
+        <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent'>On Working Progress</p>
         <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
        <div className='flex flex-col gap-5 sm:py-12 px-5 shadow-2xl shadow-[#0E0E10] border border-[#1C1C21] rounded-lg justify-center py-5 max-h-[120vh]'>
          
@@ -42,18 +42,18 @@ const Progress = () => {
        <p className='animatedText max-h-10'>{currentProject.subdesc}</p>
      </div>
        
-       <div className='flex items-center justify-between flex-wrap gap-5 mt-10 sm:mt-5'>
-           <div className='flex items-center gap-3 '>
+       <div className='flex items-center justify-end flex-wrap gap-5'>
+           <div className='flex items-center gap-3 justify-end'>
               {currentProject.tags.map((tag, index) => (
                  <div key={index} className='w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center'>
                     <img src={tag.path} alt={tag.name} />
                  </div>
               ))}
            </div>
-            <a className='flex items-center gap-2 cursor-pointer text-[#AFB0B6] underline' href={currentProject.href} target='_blank' rel='noreferrer'>
+            {/* <a className='flex items-center gap-2 cursor-pointer text-[#AFB0B6] underline' href={currentProject.href} target='_blank' rel='noreferrer'>
                 <p >Check Live Site</p>
                  <img src="/assets/arrow-up.png" alt="arrow" className='w-3 h-3'/>
-            </a>
+            </a> */}
        </div>
          
          <div className='flex justify-between items-center mt-7 '>

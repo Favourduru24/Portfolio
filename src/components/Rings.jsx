@@ -1,5 +1,5 @@
 import { useGSAP } from '@gsap/react';
-import { Center, useTexture } from '@react-three/drei';
+import { Center, useTexture, Float } from '@react-three/drei';
 import gsap from 'gsap';
 import { useCallback, useRef } from 'react';
 
@@ -44,7 +44,7 @@ const Rings = ({ position }) => {
   );
 
   return (
-    <Center>
+    <Float>
       <group scale={0.5}>
         {Array.from({ length: 4 }, (_, index) => (
           <mesh key={index} ref={getRef}>
@@ -53,7 +53,7 @@ const Rings = ({ position }) => {
           </mesh>
         ))}
       </group>
-    </Center>
+    </Float>
   );
 };
 

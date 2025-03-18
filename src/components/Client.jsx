@@ -3,7 +3,7 @@ import { clientReviews } from "../constant"
 const Client = () => {
   return (
     <section className="my-20 sm:px-10 px-5">
-    <h3 className="sm:text-4xl text-3xl font-semibold text-gray_gradient">Hear From My Client</h3>
+    <h3 className="sm:text-4xl text-3xl font-semibold bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent">Hear From My Client</h3>
      
      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-12">
         {clientReviews.map((item) => (
