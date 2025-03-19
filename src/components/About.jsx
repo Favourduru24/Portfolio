@@ -43,13 +43,13 @@ const About = () => {
             <Globe
              height={326}
              width={326} 
-             backgroundColor="(0,0,0,0)"
              backgroundImageOpacity={0.5}
              showAtmosphere
              showGraticules
              showLabels
              globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-              bumpImageUrl="unpkg.com/three-globe/example/img/earth-topology.jpg" labelsData={[{ lat: 40, lng: -100, text: 'Nigeria Rivers', color: 'white', 
+              bumpImageUrl="unpkg.com/three-globe/example/img/earth-topology.jpg"
+               labelsData={[{ lat: 40, lng: -100, text: 'Nigeria Rivers', color: 'white', 
               size: 20 }]}
                  
                 />

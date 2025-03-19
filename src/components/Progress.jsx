@@ -24,12 +24,12 @@ const Progress = () => {
     }
 
   return (
-    <section className='sm:px-10 px-5 my-20' id='work'>
+    <section className='sm:px-10 px-5 my-20 relative' id='work'>
         <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent'>On Working Progress</p>
         <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
        <div className='flex flex-col gap-5 sm:py-12 px-5 shadow-2xl shadow-[#0E0E10] border border-[#1C1C21] rounded-lg justify-center py-5 max-h-[120vh]'>
          
-    <div className='absolute top-0 right-0'>
+    <div className='absolute right-0 -z-10 top-[5.3rem]'>
     <img src={currentProject.spotlight} alt='spotlight' className='w-fullh-full object-cover rounded-xl'/>
     </div>
      <div className='p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg' style={currentProject.logoStyle}>

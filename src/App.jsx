@@ -3,7 +3,6 @@ import Client from "./components/Client"
 import Contact from "./components/Contact"
 import Experience from "./components/Experience"
 import Footer from "./components/Footer"
-import Form from "./components/Form"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar" 
 import Progress from "./components/Progress"
@@ -18,7 +17,7 @@ import Project from "./components/Project"
      <Progress/>
      <Client/>
       <Experience/>
-     <Form/>
+     <Contact/>
       <Footer/>
      </main>
    )
