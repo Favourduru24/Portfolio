@@ -5,7 +5,7 @@ const  Contact = () => {
 
    const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
    const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-   const PUBLIC_SECRET = import.meta.env.VITE_PUBLIC_SECRET;
+   const PUBLIC_SECRET = import.meta.env.VITE_PUBLIC_ID;
    const USER_NAME = import.meta.env.VITE_USER_NAME;
    const USER_EMAIL = import.meta.env.VITE_EMAIL_ADDRESS;
 
