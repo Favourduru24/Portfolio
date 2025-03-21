@@ -12,7 +12,7 @@ const Client = () => {
                  <p className="text-white font-light">{item.review}</p>
                  <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start gap-5 mt-7">
                      <div className="flex gap-3">
-                         <img src={item.img} className="w-12 h-12 rounded-full" alt={item.name}/>
+                         <img src={item.img} className="w-12 h-12 rounded-full object-center" alt={item.name}/>
                          <div className="flex flex-col">
                             <p className="font-semibold text-[#AFB0B6]">{item.name}</p>
                             <p className="text-[#62646C] md:text-base text-sm">{item.position}</p>

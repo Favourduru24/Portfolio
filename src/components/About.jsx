@@ -39,20 +39,18 @@ const About = () => {
        </div>
          <div className='col-span-1 xl:row-span-4'>
            <div className='w-full h-full border-2 border-[#1C1C21] bg-[#0E0E10] rounded-lg sm:p-7 p-4 flex flex-col gap-5'>
-         <div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
-            <Globe
-             height={326}
-             width={326} 
-             backgroundImageOpacity={0.5}
-             showAtmosphere
-             showGraticules
-             showLabels
-             globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-              bumpImageUrl="unpkg.com/three-globe/example/img/earth-topology.jpg"
-               labelsData={[{ lat: 40, lng: -100, text: 'Nigeria Rivers', color: 'white', 
-              size: 20 }]}
-                 
-                />
+         <div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center z-20'>
+         <Globe
+                height={326}
+                width={326}
+                backgroundColor="rgba(0, 0, 0, 0)"
+                backgroundImageOpacity={0.5}
+                showAtmosphere
+                showGraticules
+                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                labelsData={[{ lat: 40, lng: -100, text: 'HI There', color: 'white', size: 15 }]}
+              />
             </div>
             <div> 
               <p className='text-xl font-semibold mb-2 text-white font-generalsans'>I work remotely across most timezone.</p>
@@ -77,7 +75,7 @@ const About = () => {
                     <p className='text-[#afb0b6] text-base font-generalsans text-center'>Contact me</p>
                      <div className='cursor-pointer flex justify-center items-center gap-2' onClick={handleCopy}>
                       <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt='copy'/>
-                       <p className='text-xl font-medium  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent text-whit'>durupristine@gmail.com</p>
+                       <p className='text-xl font-medium  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent text-whit'>durupristine22@gmail.com</p>
                      </div>
                    </div>
               </div>

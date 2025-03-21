@@ -26,7 +26,7 @@ export const navLinks = [
       id: 1,
       name: 'Benson Solomon',
       position: 'Vertex Innovations',
-      img: 'assets/client3.jpeg',
+      img: 'assets/client1.jpeg',
       review:
         'Working with Pristine was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
     },

@@ -42,7 +42,7 @@ const Progress = () => {
        <p className='animatedText max-h-10'>{currentProject.subdesc}</p>
      </div>
        
-       <div className='flex items-center justify-end flex-wrap gap-5'>
+       <div className='flex items-center justify-end flex-wrap gap-5 mt-10 sm:mt-5'>
            <div className='flex items-center gap-3 justify-end'>
               {currentProject.tags.map((tag, index) => (
                  <div key={index} className='w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center'>
@@ -50,10 +50,6 @@ const Progress = () => {
                  </div>
               ))}
            </div>
-            {/* <a className='flex items-center gap-2 cursor-pointer text-[#AFB0B6] underline' href={currentProject.href} target='_blank' rel='noreferrer'>
-                <p >Check Live Site</p>
-                 <img src="/assets/arrow-up.png" alt="arrow" className='w-3 h-3'/>
-            </a> */}
        </div>
          
          <div className='flex justify-between items-center mt-7 '>
