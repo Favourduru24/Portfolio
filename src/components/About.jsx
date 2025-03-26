@@ -75,7 +75,7 @@ const About = () => {
                     <p className='text-[#afb0b6] text-base font-generalsans text-center'>Contact me</p>
                      <div className='cursor-pointer flex justify-center items-center gap-2' onClick={handleCopy}>
                       <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt='copy'/>
-                       <p className='text-xl font-medium  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent text-whit'>durupristine22@gmail.com</p>
+                       <p className='text-xl font-medium  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent text-whit'>durupristine@gmail.com</p>
                      </div>
                    </div>
               </div>

@@ -16,7 +16,7 @@ const ToggleText = ({description}) => {
   return (
     <div>
       {showMore ? (
-        <div className="max-h-52">{description}
+        <div className="sm:max-h-52">{description}
          <button onClick={handleShowLess} className="underline text-[#2f71fd] cursor-pointer">.Show Less</button>
         </div>
       ) : (
