@@ -1,73 +1,92 @@
-import React, { useState } from 'react'
-import {myProjects } from '../constant'
-import ToggleText from './ToggleText'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const projectCount = myProjects.length
+const Project = () => {
 
-const Progress = () => {
-   
-    const [selectProjectIndex, setSelectProjectIndex] = useState(0)
+  gsap.registerPlugin(ScrollTrigger)
 
+  const sectionRef = useRef(null)
+  const project1Ref = useRef(null)
+  const project2Ref = useRef(null)
+  const project3Ref = useRef(null)
 
+ 
+   useGSAP(() => {
 
-    const currentProject = myProjects[selectProjectIndex]
+     const projects = [project1Ref.current, project2Ref.current, project3Ref.current]
 
-
-    const handleNavigation = (direction) => {
-       setSelectProjectIndex((prevIndex) => {
-         if(direction === 'previous') {
-             return prevIndex === 0 ? projectCount - 1 : prevIndex - 1
-         } else{
-             return prevIndex === projectCount -1 ? 0 : prevIndex + 1
+    projects.forEach((card, index) => {
+      gsap.fromTo(
+         card,
+         {
+            y: 50, opacity: 0
+         },
+         {
+           y: 0,
+           opacity: 1,
+           duration: 1,
+           delay: 0.3 * (index + 1),
+            scrollTrigger: {
+               trigger: card,
+               start: 'top bottom 100' 
+            }
          }
-       })
-    }
+      )  
+  })
+
+    gsap.fromTo(sectionRef.current, 
+      {
+      opacity: 0
+    },
+     {
+      opacity: 1,
+      duration: 1.5
+     })   
+  }, [])
+  
 
   return (
-    <section className='sm:px-10 px-5 my-20 relative' id='work'>
-        <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent'>My Work</p>
-        <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
-       <div className='flex flex-col gap-5 sm:py-12 px-5 shadow-2xl shadow-[#0E0E10] border border-[#1C1C21] rounded-lg justify-center py-5 sm:max-h-[120vh] max-sm:h-fit'>
-         
-    <div className='absolute top-[5.3rem] left-0 -z-10'>
-    <img src={currentProject.spotlight} alt='spotlight' className='w-full h-full object-cover rounded-xl'/>
-    </div>
-     <div className='flex flex-col gap-5 text-[#AFB0B6] my-5'>
-    <p className='text-white text-2xl font-semibold animatedText'>{currentProject.title}</p>
-         <ToggleText description={currentProject.desc}/>
-       <p className='animatedText max-h-10'>{currentProject.subdesc}</p>
-     </div>
-       
-       <div className='sm:flex items-cente justify-between max-sm:flex-col gap-10 mt-24'>
-           <div className='flex items-center gap-3 '>
-              {currentProject.tags.map((tag, index) => (
-                 <div key={index} className='w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center'>
-                    <img src={tag.path} alt={tag.name} />
-                 </div>
-              ))}
-           </div>
-            <a className='flex items-center gap-2 cursor-pointer text-[#AFB0B6] underline' href={currentProject.href} target='_blank' rel='noreferrer'>
-                <p >Check Live Site</p>
-                 <img src="/assets/arrow-up.png" alt="arrow" className='w-3 h-3'/>
-            </a>
-       </div>
-         
-         <div className='flex justify-between items-center mt-7 '>
-             <button className='w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient' onClick={() => handleNavigation('previous')}>
-                <img src='/assets/left-arrow.png' alt='left arrow' className='w-4 h-4'/>
-             </button>
+    <section id='work' className='app-showcase' ref={sectionRef}>
+          <div className='w-full'>
+            <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent mb-5'>Full Stack App</p>
+               <div className='showcaselayout'>
+                   <div className='first-project-wrapper' ref={project1Ref}>
+                    <a  href="https://ed-tech-frontend-e8zm.vercel.app" target='_blank' rel='noreferrer'>
+                       <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10]'>
+                           <img src='/assets/project10.png' alt="ride"/> 
+                       </div>
+                       </a>
+                       
+                       <div className='text-content'>
+                        <h2>Ed-Tech: An Ai Tutor Learning platform that help student learn and prep for Exams making learning fun and exicting</h2>
+                        <p className='text-white-50 md:text-xl'>An App built with Next.js for SEO-friendly and server-side rendering Redux Rtk Query for state management, Tailwind for styling, Chart.js to track user monthly progress, user image are uploaded to Cloudinary I used MongoDB to store user data Node and Express to optimizing backend efficiency shandcn ui, Gemini Ai to generate quiz question handy tool like Vapi for Ai voice and lot more. </p>
+                       </div>
+                   </div>
+                      <div className='project-list-wrapper overflow-hidden'>
+                            <div className='project' ref={project2Ref}>
+                              <a  href="https://project4-nine-delta.vercel.app" target='_blank' rel='noreferrer'>
+                              <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
+                               <img src='/assets/project7.png'/>
+                              </div>
+                              </a>
+                              <h2>Event Management Platform.</h2>
+                            </div>
 
-             <button className='w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient' onClick={() => handleNavigation('next')}>
-                <img src='/assets/right-arrow.png' alt='right arrow' className='w-4 h-4'/>
-             </button>
-         </div>
-       </div>
-         <div className='border-2 border-[#1C1C21] bg-[#0E0E10] rounded-lg max-h-[120vh] w-full p-2 relative'>
-            <img src={currentProject.images} className='w-full h-full  cursor-pointer rounded-sm'/>
-        </div>
-        </div>
+                            <div className='project' ref={project3Ref}>
+                            <a  href="https://travel-tour-bay.vercel.app" target='_blank' rel='noreferrer'>
+                              <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
+                               <img src='/assets/project5.png'/>
+                              </div>
+                              </a>
+                              <h2>Travel tour Landing Page.</h2>
+                            </div>
+                      </div>
+               </div>
+          </div>
     </section>
   )
 }
 
-export default Progress
+export default Project

@@ -1,12 +1,15 @@
 import About from "./components/About"
+import Card from "./components/Card"
 import Client from "./components/Client"
 import Contact from "./components/Contact"
 import Experience from "./components/Experience"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
+import LogoSection from "./components/LogoSection"
 import Navbar from "./components/Navbar" 
-import Progress from "./components/Progress"
+import Frontend from "./components/Frontend"
 import Project from "./components/Project"
+import TechStack from "./components/TechStack"
  const App = () => {
    return (
      <main className='max-w-7xl mx-auto'>
@@ -14,10 +17,12 @@ import Project from "./components/Project"
      <Hero/>
      <About/>
      <Project/>
-     <Progress/>
-     <Client/>
+     <Frontend/>
+      <LogoSection/>
+      <Card />
       <Experience/>
-     <Contact/>
+      <TechStack/>
+      <Contact/>
       <Footer/>
      </main>
    )
