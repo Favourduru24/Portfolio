@@ -38,7 +38,7 @@ const About = () => {
           <img src={'/assets/grid2.png'} alt='grid-2' className='w-full sm:w-[276px] h-fit object-contain'/>
            <div>
              <p className='text-xl font-semibold mb-2 text-white font-generalsans'>Tech Stack</p>
-             <p className='text-[#afb0b6] text-base font-generalsans text-justify'>My tech stack includes the <span className='text-white-50 font-semibold'>MERN stack, React Native, Three.js, JavaScript, React, Redux RTK Query, RestApi Docker, Next.js with Next Auth and Jwt Auth, </span>for authentication. styling with <span className='text-white-50 font-semibold'>Tailwind CSS and Gsap</span> for building dynamic and scalable applications.</p>
+             <p className='text-[#afb0b6] text-base font-generalsans text-justify'>My tech stack includes the <span className='text-white-50 font-semibold'>MERN stack, React Native, TypeScript, Zustand, Redux RTK Query, Rest Api, Redis and Graphql Git & Github Docker, Next.js with Next Auth and Jwt Auth, </span>for authentication. <span className='text-white-50 font-semibold'>Prometheus and Grafana</span> for monitoring, styling with <span className='text-white-50 font-semibold'>Tailwind CSS and Gsap</span> for building dynamic and scalable applications.</p>
            </div>
          </div>
        </div>
@@ -69,7 +69,7 @@ const About = () => {
                   <img src='/assets/grid3.png' alt='grid-3' className='w-full sm:h-[266px] h-fit object-contain'/>
                    <div>
                       <p className='text-xl font-semibold mb-2 text-white font-generalsans'>My Passion for Coding</p>
-                      <p className='text-[#afb0b6] text-base font-generalsans text-justify'>Coding is my passion—I love turning ideas into functional, efficient, and engaging applications.Every challenge is a chance to learn, improve, and push boundaries. For me, coding isn’t just work—it’s what drives me every day. </p>
+                      <p className='text-[#afb0b6] text-base font-generalsans text-justify'>Coding is my passion I love turning ideas into functional, efficient, and engaging applications.Every challenge is a chance to learn, improve, and push boundaries. For me, coding isn’t just work it’s what drives me every day. </p>
                    </div>
                 </div>
             </div>

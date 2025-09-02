@@ -66,7 +66,7 @@ const Project = () => {
                    </div>
                       <div className='project-list-wrapper overflow-hidden'>
                             <div className='project' ref={project2Ref}>
-                              <a  href="https://project4-nine-delta.vercel.app" target='_blank' rel='noreferrer'>
+                              <a  href="https://project4-q7e7.onrender.com" target='_blank' rel='noreferrer'>
                               <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
                                <img src='/assets/project7.png'/>
                               </div>

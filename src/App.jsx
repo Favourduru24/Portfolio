@@ -10,6 +10,8 @@ import Navbar from "./components/Navbar"
 import Frontend from "./components/Frontend"
 import Project from "./components/Project"
 import TechStack from "./components/TechStack"
+import Backend from "./components/Backend"
+
  const App = () => {
    return (
      <main className='max-w-7xl mx-auto'>
@@ -17,6 +19,7 @@ import TechStack from "./components/TechStack"
      <Hero/>
      <About/>
      <Project/>
+     <Backend/>
      <Frontend/>
       <LogoSection/>
       <Card />
