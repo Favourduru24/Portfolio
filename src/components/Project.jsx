@@ -75,12 +75,12 @@ const Project = () => {
                             </div>
 
                             <div className='project' ref={project3Ref}>
-                            <a  href="https://travel-tour-bay.vercel.app" target='_blank' rel='noreferrer'>
+                            <a  href="https://travisto-u4ac.vercel.app/dashboard" target='_blank' rel='noreferrer'>
                               <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
-                               <img src='/assets/project5.png'/>
+                               <img src='/assets/travisto1.png'/>
                               </div>
                               </a>
-                              <h2>Travel tour Landing Page.</h2>
+                              <h2>Travel Agency Dashboard.</h2>
                             </div>
                       </div>
                </div>

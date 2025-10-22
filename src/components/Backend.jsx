@@ -80,7 +80,7 @@ const Backend = () => {
           (<div className="fixed inset-0 bg-black/10 z-50">
           <div className="w-72 h-20 rounded-md absolute bottom-5 right-2 bg-white flex flex-col p-1 gap-2" ref={notifyModalRef}>
               <p className='text-black text-center font-semibold font-sans'> Sorry, This project is still on development &#128562;</p> 
-              <p className='text-xs text-green-500 text-center font-semibold'>Will be completed <span className="text-red-500">Sep 15th 2025</span></p> 
+              <p className='text-xs text-green-500 text-center font-semibold'>Will be completed <span className="text-red-500">Nov 15th 2025</span></p> 
           </div>
           </div>
           )
@@ -111,13 +111,13 @@ const Backend = () => {
                               <h2>Fabric lab: Canva-inspired design.</h2>
                             </div>
 
-                            <div className='project' ref={project3Ref}>
-                            {/* <a  href="https://travel-tour-bay.vercel.app" target='_blank' rel='noreferrer'> */}
+                            <div className='project'>
+                            <a  href="https://travel-tour-bay.vercel.app" target='_blank' rel='noreferrer'>
                               <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
-                               <img src='/assets/project11.png' onClick={handleOpenModal}/>
+                               <img src='/assets/project5.png'/>
                               </div>
-                              {/* </a> */}
-                              <h2>Fabric lab: Canva-inspired design.</h2>
+                              </a>
+                              <h2>Travel Tour Landing Page</h2>
                             </div>
                       </div>
                </div>
