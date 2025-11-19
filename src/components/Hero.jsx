@@ -74,7 +74,7 @@ const Hero = () => {
             </HeroCamera> 
  
              <group> 
-               <Target position={sizes.targetPosition} /> 
+               {/* <Target position={sizes.targetPosition} />  */}
                 <ReactLogo position={sizes.reactLogoPosition} /> 
                <Cube position={sizes.cubePosition} />  
                <Rings position={sizes.ringPosition} /> 
@@ -83,7 +83,7 @@ const Hero = () => {
              <ambientLight intensity={1} /> 
              <directionalLight position={[10, 10, 10]} intensity={0.5} /> 
            </Suspense> 
-         </Canvas> 
+         </Canvas>  
            </div> 
           <div className='absolute top-0 right-0 -z-10'>
     <img src='/assets/spotlight1.png' alt='spotlight' className='w-full h-full object-cover rounded-xl'/>
