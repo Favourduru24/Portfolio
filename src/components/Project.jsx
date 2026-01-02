@@ -61,7 +61,7 @@ const Project = () => {
                        
                        <div className='text-content'>
                         <h2>Travisto: A production-ready, AI-driven travel planning platform that generates personalized trips using structured AI workflows, role-based access control, and secure payments.</h2>
-                        <p className='text-white-50 md:text-xl'>Built with Next.js and NestJS, the platform uses Google Gemini AI to generate structured, preference-aware itineraries, with destination images automated via Unsplash and optimized using Cloudinary.
+                        <p className='text-white-50 md:text-xl leading-8'>Built with Next.js and NestJS, the platform uses Google Gemini AI to generate structured, preference-aware itineraries, with destination images automated via Unsplash and optimized using Cloudinary.
 
                           The backend, powered by Prisma and PostgreSQL, includes role-based Google OAuth, Stripe payments, and efficient pagination, while an admin dashboard visualizes user growth, trip activity, and popular travel styles.
 
@@ -85,7 +85,7 @@ const Project = () => {
                   muted className={`w-full h-full md:rounded-lg`}/>
                               </div>
                               </a>
-                              <h2>AI Tutor Platform (EdTech SaaS) – Full-stack AI-powered learning platform with dynamic quizzes, voice tutoring, user analytics, and secure authentication.</h2>
+                              <h2 className='leading-8'>AI Tutor Platform (EdTech SaaS) – Full-stack AI-powered learning platform with dynamic quizzes, voice tutoring, user analytics, and secure authentication.</h2>
                             </div>
                       </div>
                </div>

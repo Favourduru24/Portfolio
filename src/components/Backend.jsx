@@ -96,9 +96,9 @@ const Backend = () => {
                        </div>
                        
                        <div className='text-content'>
-                        <h2>Fabric-Lab: A Microservices-Based Design Studio</h2>
-                        <p className='text-white-50 md:text-xl'>A high-performance, scalable design platform built with a microservices architecture. Features a core Fabric.js editor with real-time auto-save, AI image generation, and secure cloud asset management. Secured with Redis rate limiting, custom auth, and OAuth. Fully containerized with Docker and monitored with Prometheus/Grafana. </p>
-                        <p className='text-white-50 md:text-xl'>Tech Stack: Next.js, Fabric.js, Node.js, MongoDB, Redis, Docker, Zustand, PayPal API, Stability AI, Cloudinary</p>
+                        <h2>ChatSphere: A Real-Time Messaging Platform</h2>
+                        <p className='text-white-50 md:text-xl leading-8'>A modern, real-time chat application for private and group conversations, featuring a clean, intuitive UI/UX with instant messaging, typing indicators, and presence awareness. It uses secure authentication with Passport.js and scalable WebSocket-based communication for efficient message delivery. The platform is fully containerized with Docker, integrated with CI/CD via GitHub Actions, and monitored using Prometheus and Grafana to ensure reliability, performance, and scalability. making it suitable for both personal messaging tools and team collaboration platforms.</p>
+                        <p className='text-white-50 md:text-xl'>Tech Stack: Next.js, Node.js, Express, Socket.IO, MongoDB, Redis, Passport.js, Docker, GitHub Actions</p>
                        </div>
                    </div>
                       <div className='project-list-wrapper overflow-hidden'>
