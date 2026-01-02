@@ -18,6 +18,9 @@ import Backend from "./components/Backend"
      <Navbar/>
      <Hero/>
      <About/>
+     {/* <video className="pointer-events-none" autoPlay muted playsInline={true} key={videoSrc}>
+            <source src={videoSrc} type="video/mp4" />
+          </video> */}
      <Project/>
      <Backend/>
      <Frontend/>

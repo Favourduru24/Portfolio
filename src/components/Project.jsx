@@ -80,8 +80,9 @@ const Project = () => {
 
                             <div className='project' ref={project3Ref}>
                             <a  href="https://ed-tech-frontend-e8zm.vercel.app" target='_blank' rel='noreferrer'>
-                              <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
-                               <img src='/assets/project10.png'/>
+                              <div className='xl:h-[50vh] md:h-[50vh] h-96 relative w-full border-2 border-[#1C1C21] bg-[#0E0E10] rounded-lg'>
+                                <video src={`/assets/tech.mp4`} autoPlay preload="auto"
+                  muted className={`w-full h-full md:rounded-lg`}/>
                               </div>
                               </a>
                               <h2>AI Tutor Platform (EdTech SaaS) – Full-stack AI-powered learning platform with dynamic quizzes, voice tutoring, user analytics, and secure authentication.</h2>
