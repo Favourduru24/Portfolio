@@ -12,14 +12,13 @@ const Footer = () => {
        <a href='https://github.com/Favourduru24' rel='noreferrer' target='_blank'>
        <div className='w-12 h-12 rounded-full flex justify-center items-center bg-[#1C1C21] border border-[#0E0E10] '>
            <img src='/assets/github.svg' alt='github' className='w-1/2 h-1/2 cursor-pointer'/>
-           <span className='w-fit whitespace-nowrap hidden bottom-14 absolute z-30 group-hover:flex text-sm text-white/100 bg-gray-700 rounded-sm shadow-md text-center font-sans p-1'>github Account</span>
        </div>
         </a>
 
-       {/* <div className='w-12 h-12 rounded-full flex justify-center items-center bg-[#1C1C21] border border-[#0E0E10]'>
-           <img src='/assets/twitter.svg' alt='twitter' className='w-1/2 h-1/2'/>
+       <div className='w-12 h-12 rounded-full flex justify-center items-center bg-[#1C1C21] border border-[#0E0E10] cursor-pointer'>
+           <img src='/assets/linkedin.png' alt='twitter' className='w-1/2 h-1/2'/>
        </div>
-       <div className='w-12 h-12 rounded-full flex justify-center items-center bg-[#1C1C21] border border-[#0E0E10]'>
+       {/* <div className='w-12 h-12 rounded-full flex justify-center items-center bg-[#1C1C21] border border-[#0E0E10]'>
            <img src='/assets/instagram.svg' alt='instagram' className='w-1/2 h-1/2'/>
        </div> */}
         </div>

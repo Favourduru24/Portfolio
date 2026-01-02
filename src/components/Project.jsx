@@ -53,21 +53,25 @@ const Project = () => {
             <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent mb-5'>Full Stack App</p>
                <div className='showcaselayout'>
                    <div className='first-project-wrapper' ref={project1Ref}>
-                    <a  href="https://ed-tech-frontend-e8zm.vercel.app" target='_blank' rel='noreferrer'>
+                    <a  href="https://travisto-u4ac.vercel.app/dashboard" target='_blank' rel='noreferrer'>
                        <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10]'>
-                           <img src='/assets/project10.png' alt="ride"/> 
+                           <img src='/assets/travisto1.png' alt="ride"/> 
                        </div>
                        </a>
                        
                        <div className='text-content'>
-                        <h2>Ed-Tech: An Ai Tutor Learning platform that help student learn and prep for Exams making learning fun and exicting</h2>
-                        <p className='text-white-50 md:text-xl'>An App built with Next.js for SEO-friendly and server-side rendering Redux Rtk Query for state management, Tailwind for styling, Chart.js to track user monthly progress, user image are uploaded to Cloudinary I used MongoDB to store user data Node and Express to optimizing backend efficiency shandcn ui, Gemini Ai to generate quiz question handy tool like Vapi for Ai voice and lot more. </p>
+                        <h2>Travisto: A production-ready, AI-driven travel planning platform that generates personalized trips using structured AI workflows, role-based access control, and secure payments.</h2>
+                        <p className='text-white-50 md:text-xl'>Built with Next.js and NestJS, the platform uses Google Gemini AI to generate structured, preference-aware itineraries, with destination images automated via Unsplash and optimized using Cloudinary.
+
+                          The backend, powered by Prisma and PostgreSQL, includes role-based Google OAuth, Stripe payments, and efficient pagination, while an admin dashboard visualizes user growth, trip activity, and popular travel styles.
+
+                          The application is Dockerized and deployed through GitHub Actions CI/CD for reliable, production-ready delivery.</p>
                        </div>
                    </div>
                       <div className='project-list-wrapper overflow-hidden'>
                             <div className='project' ref={project2Ref}>
                               <a  href="https://project4-q7e7.onrender.com" target='_blank' rel='noreferrer'>
-                              <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
+                              <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
                                <img src='/assets/project7.png'/>
                               </div>
                               </a>
@@ -75,12 +79,12 @@ const Project = () => {
                             </div>
 
                             <div className='project' ref={project3Ref}>
-                            <a  href="https://travisto-u4ac.vercel.app/dashboard" target='_blank' rel='noreferrer'>
-                              <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
-                               <img src='/assets/travisto1.png'/>
+                            <a  href="https://ed-tech-frontend-e8zm.vercel.app" target='_blank' rel='noreferrer'>
+                              <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50'>
+                               <img src='/assets/project10.png'/>
                               </div>
                               </a>
-                              <h2>Travel Agency Dashboard.</h2>
+                              <h2>AI Tutor Platform (EdTech SaaS) – Full-stack AI-powered learning platform with dynamic quizzes, voice tutoring, user analytics, and secure authentication.</h2>
                             </div>
                       </div>
                </div>

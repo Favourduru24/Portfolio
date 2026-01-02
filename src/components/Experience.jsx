@@ -34,10 +34,10 @@ const Experience = () => {
              </div>
               <div className="col-span-1 rounded-lg bg-[#0E0E10] border border-[#1C1C21] h-full"/>
                   </div>
-                   <div className="sm:p-5 px-2.5 py-5">
+                   <div className="flex flex-col gap-1 px-2 py-2">
                      <p className="font-bold text-[#E4E4E6]">{name}</p>
-                     <p className="text-sm mb-5 text-gray-200">{pos} -- {duration}</p>
-                     <p className="group-hover:text-[#FFFFFF] transition ease-in-out duration-500 text-gray-600">{title}</p>
+                     {/* <p className="text-sm mb-5 text-gray-200">{pos} -- {duration}</p> */}
+                     <p className="group-hover:text-[#FFFFFF] transition ease-in-out duration-500 text-gray-600 mb-2 leading-8">{title}</p>
                    </div>
              </div>
          ))}

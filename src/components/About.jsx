@@ -29,7 +29,9 @@ const About = () => {
       <img src={'/assets/grid1.png'} alt='grid-1' className='w-full sm:h-[276px] h-fit object-contain'/>
        <div>
         <p className='text-xl font-semibold mb-2 text-white font-generalsans'>Hi I'm Pristine</p>
-        <p className='text-[#afb0b6] text-base font-generalsans text-justify'>With over three years of experience, I have refined my expertise in both frontend and backend development, specializing in creating dynamic and visually striking web applications.</p>
+        <p className='text-[#afb0b6] text-base font-generalsans text-justify'>With 4+ years of hands-on experience, I specialize in building end-to-end web systems, from frontend UX to backend architecture, AI integrations, payments, and production deployment
+          
+      I don’t just build features; I design how systems behave under real users, real data, and real traffic.</p>
        </div>
        </div>
        </div>
@@ -38,7 +40,7 @@ const About = () => {
           <img src={'/assets/grid2.png'} alt='grid-2' className='w-full sm:w-[276px] h-fit object-contain'/>
            <div>
              <p className='text-xl font-semibold mb-2 text-white font-generalsans'>Tech Stack</p>
-             <p className='text-[#afb0b6] text-base font-generalsans text-justify'>My tech stack includes the <span className='text-white-50 font-semibold'>MERN stack, React Native, TypeScript, Zustand, Redux RTK Query, Rest Api, Redis and Graphql Git & Github Docker, Next.js with Next Auth and Jwt Auth, </span>for authentication. <span className='text-white-50 font-semibold'>Prometheus and Grafana</span> for monitoring, styling with <span className='text-white-50 font-semibold'>Tailwind CSS and Gsap</span> for building dynamic and scalable applications.</p>
+             <p className='text-[#afb0b6] text-base font-generalsans text-justify'>My tech stack includes the <span className='text-white-50 font-semibold leading-8'>MERN stack, Postgresql, TypeScript, Zustand, Redux RTK Query, Rest Api, Redis and Graphql Git & Github Docker, Next.js with Next Auth and Jwt Auth, </span>for authentication. 🤝Websocket <span className='text-white-50 font-semibold'>Prometheus and Grafana</span> for monitoring, styling with <span className='text-white-50 font-semibold'>Tailwind CSS and Gsap</span> for building dynamic and scalable applications.</p>
            </div>
          </div>
        </div>
@@ -59,7 +61,7 @@ const About = () => {
             </div>
             <div> 
               <p className='text-xl font-semibold mb-2 text-white font-generalsans'>I work remotely across most timezone.</p>
-              <p className='text-[#afb0b6] text-base font-generalsans'>I'm based in Nigeria with remote work available can travel provided there's accumodation.</p>
+              <p className='text-[#afb0b6] text-base font-generalsans leading-8'>I'm based in Nigeria with remote work available. ✈️ Open to travel with accommodation.</p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10"/>
             </div>
            </div>
@@ -69,7 +71,7 @@ const About = () => {
                   <img src='/assets/grid3.png' alt='grid-3' className='w-full sm:h-[266px] h-fit object-contain'/>
                    <div>
                       <p className='text-xl font-semibold mb-2 text-white font-generalsans'>My Passion for Coding</p>
-                      <p className='text-[#afb0b6] text-base font-generalsans text-justify'>Coding is my passion I love turning ideas into functional, efficient, and engaging applications.Every challenge is a chance to learn, improve, and push boundaries. For me, coding isn’t just work it’s what drives me every day. </p>
+                      <p className='text-[#afb0b6] text-base font-generalsans text-justify leading-8'>I’m driven by solving real problems with well-designed systems. For me, coding isn’t just about writing logic — it’s about: 🛡️ making systems predictable ⚠️ designing for failure 📈 optimizing for scale 🌐 building software people can rely on</p>
                    </div>
                 </div>
             </div>

@@ -80,7 +80,7 @@ const Backend = () => {
           (<div className="fixed inset-0 bg-black/10 z-50">
           <div className="w-72 h-20 rounded-md absolute bottom-5 right-2 bg-white flex flex-col p-1 gap-2" ref={notifyModalRef}>
               <p className='text-black text-center font-semibold font-sans'> Sorry, This project is still on development &#128562;</p> 
-              <p className='text-xs text-green-500 text-center font-semibold'>Will be completed <span className="text-red-500">Nov 15th 2025</span></p> 
+              <p className='text-xs text-green-500 text-center font-semibold'>Will be completed <span className="text-red-500">Feb 2nd 2026</span></p> 
           </div>
           </div>
           )
@@ -91,8 +91,8 @@ const Backend = () => {
                <div className='showcaselayout'>
                    <div className='first-project-wrapper cursor-pointer' ref={project1Ref} >
                    
-                       <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10]'>
-                           <img src='/assets/project13.png' alt="ride"  onClick={handleOpenModal}/> 
+                       <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] p-1'>
+                           <img src='/assets/project14.png' alt="ride"  onClick={handleOpenModal} className='rounded-md'/> 
                        </div>
                        
                        <div className='text-content'>
@@ -104,7 +104,7 @@ const Backend = () => {
                       <div className='project-list-wrapper overflow-hidden'>
                             <div className='project' ref={project2Ref}>
                               {/* <a  href="https://project4-nine-delta.vercel.app" target='_blank' rel='noreferrer'> */}
-                              <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
+                              <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
                                <img src='/assets/project12.png' onClick={handleOpenModal}/>
                               </div>
                               {/* </a> */}
@@ -113,7 +113,7 @@ const Backend = () => {
 
                             <div className='project'>
                             <a  href="https://travel-tour-bay.vercel.app" target='_blank' rel='noreferrer'>
-                              <div className='image-wrapper border-[0.5px] border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
+                              <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
                                <img src='/assets/project5.png'/>
                               </div>
                               </a>

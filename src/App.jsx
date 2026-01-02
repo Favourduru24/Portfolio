@@ -23,6 +23,7 @@ import Backend from "./components/Backend"
      <Frontend/>
       <LogoSection/>
       <Card />
+      <Client/>
       <Experience/>
       <TechStack/>
       <Contact/>

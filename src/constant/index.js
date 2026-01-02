@@ -24,19 +24,27 @@ export const navLinks = [
   export const clientReviews = [
     {
       id: 1,
-      name: 'Benson Solomon',
-      position: 'Vertex Innovations',
+      name: 'Safeer Solomon',
+      position: 'Backend Developer at CogOps',
       img: 'assets/client1.jpeg',
       review:
-        'Working with Pristine was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+        'Working with Pristine was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention.',
     },
     {
       id: 2,
-      name: 'Ethan Sofia',
-      position: 'NovaTech Solutions',
+      name: 'Jesse Sofia',
+      position: 'Tech lead at CogOps',
       img: 'assets/review4.png',
       review:
-        'Pristine was a pleasure to work with. He quickly grasped our requirements and delivered a website that went beyond our expectations. His expertise in both frontend and backend development is exceptional, showcasing his ability to create seamless, high-performing solutions. Highly recommended!',
+        'Pristine was a pleasure to work with. He q uickly grasped our requirements and delivered a website that went beyond our expectations. His expertise!',
+    },
+    {
+      id: 3,
+      name: 'David Usman',
+      position: 'Project Manager at CogOps',
+      img: 'assets/review4.png',
+      review:
+        'Pristine was a pleasure to work with. He quickly grasped our requirements and delivered a website that went beyond our expectations. His expertise!',
     }
    ];
   
@@ -305,28 +313,28 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Mern Stack',
+      name: 'Full-Stack Developer (MERN) — 2023–Present',
       pos: 'Fullstack Web Developer',
-      duration: '2022 - Present',
-      title: "Working with the MERN stack over the years has been a rewarding journey, allowing me to build scalable, high-performance applications. From crafting dynamic UIs with React and Tailwind to optimizing backend efficiency with Node.js, Express, and MongoDB, I’ve refined my skills in authentication, state management with redux RTK query, and API performance to deliver seamless user experiences.",
+      duration: '2023 - Present',
+      title: "Working with the MERN stack over the years has been a rewarding journey, allowing me to build scalable, high-performance applications. From crafting dynamic UIs with React and Tailwind to optimizing backend efficiency with Node.js, Express, and MongoDB, I have refined my skills in authentication, state management with redux RTK query, and API performance to deliver seamless user experiences.",
       icon: '/assets/react.svg',
       animation: 'victory',
     },
     {
       id: 2,
-      name: 'Next.js',
+      name: 'Next.js Full-Stack Developer — 2023–Present',
       pos: 'Next.js Fullstack',
       duration: '2023 - present',
-      title: "Working with Next.js full-stack over the years has been an exciting journey, allowing me to build fast, scalable, and SEO-friendly applications. From server-side rendering and Server action to authentication with Next Auth, I’ve leveraged its powerful features to optimize performance, enhance user experience, and streamline backend processes for seamless full-stack development",
+      title: "Working with Next.js full-stack over the years has been an exciting journey, allowing me to build fast, scalable, and SEO-friendly applications. From server-side rendering and Server action to authentication with Next Auth, I have leveraged its powerful features to optimize performance, enhance user experience, and streamline backend processes for seamless full-stack development",
       icon: '/assets/next.png',
       animation: 'clapping',
     },
     {
       id: 3,
-      name: 'React-Native',
+      name: 'React Native Developer — 2024–Present',
       pos: 'Junior React-Native Developer',
       duration: '2024 - present',
-      title: "Working with React Native full-stack has been an exciting new endeavor, seamlessly carrying over 75% of my web development skills. Leveraging my React expertise, I’ve built dynamic, high-performance mobile apps while adapting to native components, mobile optimizations, and app-specific challenges. This transition has expanded my ability to create cross-platform experiences efficiently.",
+      title: "Expanded into mobile development, transferring core system design and React expertise to native platforms for cross-platform delivery. I have built dynamic, high-performance mobile apps while adapting to native components, mobile optimizations, and app-specific challenges. This transition has expanded my ability to create cross-platform experiences efficiently.",
       icon: '/assets/react.svg',
       animation: 'salute',
     },
@@ -410,18 +418,18 @@ export const navLinks = [
   export const abilities = [
     {
       imgPath: "/assets/seo.png",
-      title: "Quality Focus",
-      desc: "Delivering high-quality results while maintaining attention to every detail.",
+      title: "Quality-Focused Development",
+      desc: "I pay close attention to detail, performance, and long-term maintainability.",
     },
     {
       imgPath: "/assets/chat.png",
       title: "Reliable Communication",
-      desc: "Keeping you updated at every step to ensure transparency and clarity.",
+      desc: "You’re always informed, no surprises, no guesswork.",
     },
     {
       imgPath: "/assets/time.png",
       title: "On-Time Delivery",
-      desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+      desc: "I ship when promised, without sacrificing quality.",
     },
   ];
   
