@@ -90,15 +90,21 @@ const Backend = () => {
             <p className='sm:text-4xl text-3xl font-semibold  bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent mb-5'>Advance Full Stack Project</p>
                <div className='showcaselayout'>
                    <div className='first-project-wrapper cursor-pointer' ref={project1Ref} >
-                   
+                        
+                         
                        <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] p-1'>
+                       <a  href="https://chat-sphere-frontend-3ae4.vercel.app" target='_blank' rel='noreferrer'>
                            <img src='/assets/project14.png' alt="ride"  onClick={handleOpenModal} className='rounded-md'/> 
+                       </a>
                        </div>
                        
                        <div className='text-content'>
-                        <h2>ChatSphere: A Real-Time Messaging Platform</h2>
-                        <p className='text-white-50 md:text-xl leading-8'>A modern, real-time chat application for private and group conversations, featuring a clean, intuitive UI/UX with instant messaging, typing indicators, and presence awareness. It uses secure authentication with Passport.js and scalable WebSocket-based communication for efficient message delivery. The platform is fully containerized with Docker, integrated with CI/CD via GitHub Actions, and monitored using Prometheus and Grafana to ensure reliability, performance, and scalability. making it suitable for both personal messaging tools and team collaboration platforms.</p>
-                        <p className='text-white-50 md:text-xl'>Tech Stack: Next.js, Node.js, Express, Socket.IO, MongoDB, Redis, Passport.js, Docker, GitHub Actions</p>
+                        <h2>ChatSphere: A Real-Time Messaging Platform with AI Integration</h2>
+                        <p className='text-white-50 md:text-xl leading-8'>ChatSphere is a modern, real-time chat app for private and group conversations. It features instant messaging, typing indicators, presence awareness, and AI-powered chat for smarter interactions.
+
+                        Users can log in securely with Google OAuth or Passport.js. Real-time communication is powered by Socket.IO, ensuring fast, scalable message delivery.
+                        Fully containerized with Docker, integrated with CI/CD via GitHub Actions, and monitored with Prometheus and Grafana, ChatSphere is reliable, performant, and ideal for personal messaging or team collaboration.</p>
+                        <p className='text-white-50 md:text-xl'>Tech Stack: React.js | Node.js | Express | Socket.IO | MongoDB | Redis | Passport.js | TailwindCSS | Docker | GitHub Actions</p>
                        </div>
                    </div>
                       <div className='project-list-wrapper overflow-hidden'>
