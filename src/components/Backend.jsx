@@ -94,18 +94,34 @@ const Backend = () => {
                          
                        <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] p-1'>
                        <a  href="https://chat-sphere-frontend-3ae4.vercel.app" target='_blank' rel='noreferrer'>
-                           <img src='/assets/project14.png' alt="ride"  onClick={handleOpenModal} className='rounded-md'/> 
+                       <video src={`/assets/tech2.mp4`} autoPlay preload="auto"
+                  muted className={`w-full h-full md:rounded-lg`}/>
                        </a>
                        </div>
                        
                        <div className='text-content'>
-                        <h2>ChatSphere: A Real-Time Messaging Platform with AI Integration</h2>
-                        <p className='text-white-50 md:text-xl leading-8'>ChatSphere is a modern, real-time chat app for private and group conversations. It features instant messaging, typing indicators, presence awareness, and AI-powered chat for smarter interactions.
+                      <h2>Taskloom: An AI-Powered Relationship & Task Management Platform</h2>
 
-                        Users can log in securely with Google OAuth or Passport.js. Real-time communication is powered by Socket.IO, ensuring fast, scalable message delivery.
-                        Fully containerized with Docker, integrated with CI/CD via GitHub Actions, and monitored with Prometheus and Grafana, ChatSphere is reliable, performant, and ideal for personal messaging or team collaboration.</p>
-                        <p className='text-white-50 md:text-xl'>Tech Stack: React.js | Node.js | Express | Socket.IO | MongoDB | Redis | Passport.js | TailwindCSS | Docker | GitHub Actions</p>
-                       </div>
+                      <p className='text-white-50 md:text-xl leading-8'>
+                        Taskloom is a modern relationship management platform designed to help
+                        individuals and teams organize contacts, manage follow-ups, and maintain
+                        meaningful relationships. It combines task management, reminders,
+                        real-time collaboration, and AI-powered relationship memory in one
+                        workspace.
+                        
+                        Users can securely manage their workspaces, contacts, tasks, and
+                        follow-ups while receiving automated reminders for important
+                        relationships. Real-time updates are powered by Socket.IO, allowing
+                        collaborators to see task and workspace activity instantly. AI
+                        integrations help users maintain context about their relationships
+                        without manually remembering every interaction.
+                      </p>
+
+                      <p className='text-white-50 md:text-xl'>
+                        Tech Stack: Next.js | NestJS | TypeScript | PostgreSQL | Prisma | Redis |
+                        Socket.IO | Google Gemini | JWT | Docker | Vercel | Render
+                      </p>
+                    </div>
                    </div>
                       <div className='project-list-wrapper overflow-hidden'>
                             <div className='project' ref={project2Ref}>
@@ -118,13 +134,22 @@ const Backend = () => {
                             </div>
 
                             <div className='project'>
+                            <a  href="https://chat-sphere-frontend-3ae4.vercel.app" target='_blank' rel='noreferrer'>
+                              <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
+                               <img src='/assets/project14.png'/>
+                              </div>
+                              </a>
+                              <h2>ChatSphere: A Real-Time Messaging Platform with AI Integration</h2>
+                            </div>
+
+                            {/* <div className='project'>
                             <a  href="https://travel-tour-bay.vercel.app" target='_blank' rel='noreferrer'>
                               <div className='image-wrapper border-2 border-[#1C1C21] bg-[#0E0E10] bg-opacity-50 cursor-pointer'>
                                <img src='/assets/project5.png'/>
                               </div>
                               </a>
                               <h2>Travel Tour Landing Page</h2>
-                            </div>
+                            </div> */}
                       </div>
                </div>
           </div>
